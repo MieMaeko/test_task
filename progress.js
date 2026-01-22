@@ -4,10 +4,10 @@ function progressApi(rootElement) {
         setProgress(value) {
             bar.style.setProperty('--pg-bar', `${value}%`)
         },
-        Hide() {
+        setHidden() {
             bar.classList.toggle('hidden');
         },
-        Animate() {
+        setAnimated() {
             bar.classList.toggle('animated');
         }
     }
@@ -28,10 +28,10 @@ window.onload = () => {
     })
 
     hide.addEventListener('change', () => {
-        api.Hide()
+        api.setHidden()
     })
 
     anim.addEventListener('change', () => {
-        api.Animate()
+        api.setAnimated()
     })
 }

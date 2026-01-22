@@ -62,7 +62,7 @@
 }
 
 .progress-bar.animated {
-    animation: rotate 2s linear infinite;
+    animation: rotate 3s linear infinite; 
 }
 
 .progress-bar.hidden {
@@ -141,15 +141,10 @@ input:checked+.slider:before {
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+  0%  { transform: rotate(0deg); }
+  35% { transform: rotate(360deg); }
+  100%{ transform: rotate(360deg); }
 }
-
 @media screen and (max-width: 380px) {
     .progress-block {
         font-size: 1.35em;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress-block">
+        <h3>Progress</h3>
+        <div class="progress-main">
+            <div class="progress-bar">
+                <progress value="100" min="0" max="100" style="visibility:hidden;height:0;width:0;">100%</progress>
+            </div>
+            <div class="progress-conditions">
+                <div class="progress-conditions-block">
+                    <input id="progress-value" type="text" inputmode="numeric" min="0" max="100">
+                    <span>Value</span>
+                </div>
+                <div class="progress-conditions-block">
+                    <label class="switch">
+                        <input type="checkbox" id="progress-animate">
+                        <span class="slider"></span>
+                    </label>
+                    <label for="progress-animate">Animate</label>
+                </div>
+                <div class="progress-conditions-block">
+                    <label class="switch">
+                        <input type="checkbox" id="progress-hide">
+                        <span class="slider"></span>
+                    </label>
+                    <label for="progress-hide">Hide</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

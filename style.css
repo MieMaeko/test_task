@@ -13,7 +13,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3%;
+    margin: 3% auto;
+    width: 85%;
 }
 @media screen and (max-width: 340px) {
     .progress-main {
@@ -25,7 +26,7 @@
     height: 350px;
     width: 350px;
     background: radial-gradient(closest-side, white 79%, transparent 80%),
-        conic-gradient(rgb(94, 94, 235) var(--pg-bar), pink 0);
+        conic-gradient(#005CFE var(--pg-bar), rgb(214, 214, 214) 0);
     border-radius: 50%;
     transition: opacity 1s ease;
 }
@@ -97,11 +98,11 @@
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: #005CFE;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #005CFE;
 }
 
 input:checked+.slider:before {
